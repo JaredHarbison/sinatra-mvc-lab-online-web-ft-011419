@@ -28,4 +28,3 @@ class PigLatinizer
     word + consonants + 'a'
   end
 end
-end 
