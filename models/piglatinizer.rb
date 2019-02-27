@@ -5,6 +5,19 @@ class PigLatinizer
     text_array.length == 1 ? piglatinize_word(text) : piglatinize_phrase(text_array)
   end
 
-
+  def piglatinize_word(word)
+    if word[0].match(/[aAeEiIoOuU]/)
+      word = word + "way"
+    elsif word[1].match(/[bcdfghjklmnpqrstvwxz]/)
+      if word[2].match(/[bcdfghjklmnpqrstvwxz]/)
+        word = word[3..word.length] + word[0..2] + "ay"
+      else
+        word = word[2..word.length] + word[0..1] + "ay"
+      end 
+    else 
+      word = word[1..word.lenth] + word[0] + "ay"
+    end 
+  end 
+      
 
  end
