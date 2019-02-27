@@ -1,15 +1,8 @@
 class PigLatinizer
 
-   def piglatinize(user_phrase)
-    if user_phrase.include?(" ")
-      pig_phrase = []
-      user_phrase.split(" ").each do |word|
-        pig_phrase << translator(word)
-      end
-      pig_phrase.join(" ")
-    else
-      translator(user_phrase)
-    end
+   def piglatinize(text)
+    text_array = text.split(" ")
+    text_array.length == 1 ? piglatinize_word(text) : piglatinize_phrase(text_array)
   end
 
    def translator(word)
