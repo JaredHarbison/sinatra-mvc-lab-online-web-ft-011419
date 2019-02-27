@@ -17,7 +17,7 @@ class PigLatinizer
     else
       word = word[1..word.lenth] + word[0] + "ay"
     end
-  end 
+  end
 
   def piglatinize_phrase(phrase)
     phrase.map { |word| piglatinize_word(word) }.join(" ")
