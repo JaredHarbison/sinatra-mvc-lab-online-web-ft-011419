@@ -19,5 +19,9 @@ class PigLatinizer
     end
   end 
 
+  def piglatinize_phrase(phrase)
+    phrase.map { |word| piglatinize_word(word) }.join(" ")
+  end 
+
 
  end
