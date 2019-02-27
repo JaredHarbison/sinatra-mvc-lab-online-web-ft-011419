@@ -13,11 +13,11 @@ class PigLatinizer
         word = word[3..word.length] + word[0..2] + "ay"
       else
         word = word[2..word.length] + word[0..1] + "ay"
-      end 
-    else 
+      end
+    else
       word = word[1..word.lenth] + word[0] + "ay"
-    end 
+    end
   end 
-      
+
 
  end
