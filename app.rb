@@ -11,4 +11,5 @@ class App < Sinatra::Base
     @result = latin.piglatinize(params[:user_phrase])
     erb :results
   end
+  
 end
