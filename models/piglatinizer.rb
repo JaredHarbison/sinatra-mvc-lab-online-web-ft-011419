@@ -15,13 +15,13 @@ class PigLatinizer
         word = word[2..word.length] + word[0..1] + "ay"
       end
     else
-      word = word[1..word.lenth] + word[0] + "ay"
+      word = word[1..word.length] + word[0] + "ay"
     end
   end
 
   def piglatinize_phrase(phrase)
     phrase.map { |word| piglatinize_word(word) }.join(" ")
-  end 
+  end
 
 
  end
