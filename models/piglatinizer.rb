@@ -27,4 +27,5 @@ class PigLatinizer
     end
     word + consonants + 'a'
   end
+end
 end 
