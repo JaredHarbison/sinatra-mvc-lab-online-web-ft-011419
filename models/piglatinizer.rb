@@ -5,6 +5,6 @@ class PigLatinizer
     text_array.length == 1 ? piglatinize_word(text) : piglatinize_phrase(text_array)
   end
 
-  
+
 
  end
